@@ -10,7 +10,7 @@ const Events = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/flights`
+        `https://flight-backend-28sr.onrender.com/flights`
       );
       setData(response.data);
     } catch (error) {
@@ -23,7 +23,7 @@ const Events = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:5000/flights/delete/${id}`)
+      .delete(`https://flight-backend-28sr.onrender.com/flights/delete/${id}`)
       .then((res) => {
         // console.log(res);
         window.location.reload();
@@ -39,7 +39,7 @@ const Events = () => {
 
   const handleEdit = (id) => {
     axios
-      .put(`http://localhost:5000/flights/patch/${id}`)
+      .put(`https://flight-backend-28sr.onrender.com/flights/patch/${id}`)
       .then((req) => {
         // console.log(req);
         window.location.reload();

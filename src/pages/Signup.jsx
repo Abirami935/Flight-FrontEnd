@@ -20,7 +20,7 @@ const Signup = () => {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        "http://localhost:5000/signup",
+        "https://flight-backend-28sr.onrender.com/signup",
         { email, password }
       );
       localStorage.setItem("token", response.data.token);

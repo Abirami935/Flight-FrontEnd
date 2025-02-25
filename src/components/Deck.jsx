@@ -39,7 +39,7 @@ const Deck = () => {
   const fetchFlight = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/flights/findFlight/${_id}`
+        `https://flight-backend-28sr.onrender.com/flights/findFlight/${_id}`
       );
       setFlight(response.data);
     } catch (error) {

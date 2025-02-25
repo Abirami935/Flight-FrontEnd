@@ -49,7 +49,7 @@ const Payment = () => {
 
     try {
       await axios
-        .post("http://localhost:5000/bookings/addBooking", {
+        .post("https://flight-backend-28sr.onrender.com/bookings/addBooking", {
           userId,
           flightId,
           total,

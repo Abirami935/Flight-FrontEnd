@@ -12,7 +12,7 @@ const MyBookings = () => {
   const fetchFlight = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/flights/${_id}`
+        `https://flight-backend-28sr.onrender.com/flights/${_id}`
       );
       setFlights(response.data);
       setLoading(false); 

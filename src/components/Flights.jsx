@@ -34,7 +34,7 @@ const Flights = () => {
   const fetchFlights = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/flights`
+        `https://flight-backend-28sr.onrender.com/flights`
       );
       setFlights(response.data);
       console.log(response.data);
